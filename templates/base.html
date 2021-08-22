@@ -1,0 +1,25 @@
+<!-- Pagaina usada como base para o cabeçalho das outras-->
+<!DOCTYPE html>
+    <html class="home">
+        <head>
+        <meta charset="UTF-8"/>
+                <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+            <title>Api Docker</title>
+        </head>
+        <body>
+            <div class="menu-h">
+               <ul> 
+                    <li><a href="http://localhost:8880/">Home </a></li>
+                    <li><a href="http://localhost:8880/login">Login </a>
+                    <li><a href="http://localhost:8880/logout">Logout </a></li>
+                    <li><a href="http://localhost:8880/user">Cadastro </a></li>
+                    <li><a href="http://localhost:8880/view">View </a></li>
+
+                </ul> 
+            </div>
+        </body>
+            {%block content %} 
+                <!-- O que colocar aqui fica fixo na pagina inicial-->
+            {%endblock%}
+    </html>
+

@@ -1,0 +1,18 @@
+{% extends "base.html"%} <!-- Dados absorvido da pagina Base, usado no cabeçalho de todas as paginas-->a
+
+
+{% block content %}
+<!-- Dados do corpo da pagina-->
+<div>
+    <h1> Dados do Cadastro  </h1> 
+    {% for iten in dados%}  
+        {%if iten.name and iten.email%}
+            <p>Nome: {{iten.name}} </p>
+            <p>Email: {{iten.email}} </p>
+            <p>CEP: {{iten.cep}}</p>
+        {%endif%}  
+    {%endfor%}
+
+</div>
+<!-- Final dos dados da pagina-->
+{% endblock %}

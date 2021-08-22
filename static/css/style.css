@@ -1,0 +1,84 @@
+.home{
+  background-color: rgb(173, 250, 224);
+}
+
+.mesns{
+  font-size: 200%;
+}
+h1{  
+    color: rgb(94, 62, 62);
+    text-align: center;
+    padding: 10px;
+}
+
+h2{  
+  color: rgb(218, 7, 7);
+  text-align: center;
+  padding: 10px;
+  font-size: 100%;
+}
+
+h3{  
+  color: rgb(6, 6, 12);
+  text-align: center;
+  padding: 10px;
+  font-size: 100%;
+}
+
+
+.pag_log_geral{
+    margin: auto;
+    padding: 8x;
+    width: 90%;
+    display: flex;
+}
+
+.dados_nome{
+  /*text-align: center;*/
+  margin: 8px;
+  padding: auto;
+  width: 400px;
+  /*display: flex;*/
+}
+
+
+#menu-h-test{
+    margin: auto;
+    display: inline;
+    text-align: right;    
+}
+
+a {
+    
+    color: rgb(8, 107, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(44, 36, 36);
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: rgba(243, 232, 232, 0.877);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(65, 53, 53);
+  }
+

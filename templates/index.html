@@ -1,0 +1,15 @@
+{%extends "base.html" %}
+
+
+{%block content %}
+<!-- Dados do corpo da pagina-->
+<body>
+    <h1> Bem vindo ao mundo Devops</h1>
+    {% if user%}
+       <h2> Usuário: {{user}}</h2> 
+    {% else%}
+        <h2> Versão 1.0 </h2>
+    {%endif%}
+</body>
+<!-- Final dos dados da pagina-->
+{%endblock%}

@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+
+{% block content %}
+<!-- Dados do corpo da pagina-->
+<h1 class="pag_log_geral"> Pagina de Login</h1>
+
+<div class="mesns">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+        <form action='#' method="POST">
+            <div>
+                <p><label>Nome:</label> <input class="dados_nome" type="text" name="nameusr"/> </p>  
+                <p><input type="submit" name="submit" /> </p>
+            </div>
+        </form>   
+<!-- Final dos dados da pagina-->
+{% endblock %}

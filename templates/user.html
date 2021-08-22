@@ -1,0 +1,22 @@
+{% extends "base.html"%} <!-- Dados absorvido da pagina Base, usado no cabeçalho de todas as paginas-->a
+
+
+{% block content %}
+<!-- Dados do corpo da pagina-->
+<h1>Cadastro usuário</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+    <p>Usuário: {{user}}</p>
+
+<form action="#" , method="POST" > 
+    <input type='email' name="email" placeholder="Entre com o seu email" value="{{ email if email}}"/>
+    <input type="cep" name="cep" placeholder="Entre com o CEP" value="{{cep if cep}}"/>
+    <input type="submit" name="submit"/>
+</form>
+<!-- Final dos dados da pagina-->
+{%endblock%}
